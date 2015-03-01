@@ -29,15 +29,8 @@ def domain_available?(domain)
   attempts = 0
   begin
     resolver.query(domain)
-  rescue Dnsruby::ResolvTimeout, Dnsruby::ServFail
-    attempts += 1
-    if attempts < 3
-      puts "DNS Resolver timeout... retrying"
-      sleep 1
-      retry
-    else
-      puts "DNS Resolver timeout... failed"
-    end
+  rescue Dnsruby::ResolvTimeout, Dnsruby::ServFail => e
+    puts e
   end
   false
 rescue Dnsruby::NXDomain
@@ -132,6 +125,10 @@ rel = RelatedWords.new("common-300-100k")
 set :public_folder, 'public'
 
 get "/" do
+  File.read(File.join('public', 'index.html'))
+end
+
+get "/ideas" do
   json(
     :description => "Domain Name Idea Generator using Mashape word2vec API",
     :api_url => "http://mashape.com/canadaduane/word2vec",

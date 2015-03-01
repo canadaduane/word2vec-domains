@@ -169,12 +169,13 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-.input-group-btn {width:500px;}
+.input-group-btn {
+    width:500px;
+}
 
 .results-wrapper {
     margin-top: 1em;
-
-
+    margin-bottom: 1em;
 }
 
 .results-item {
@@ -182,36 +183,20 @@ p.copyright {
     font-size: 18pt;
     color: #ca8922;
     margin-left: 2em;
-
-
 }
 
 .results-item .available {
     font-weight: normal;
     color: #daa942;
-
-
 }
-
-
-
-
 
 h1 {
     padding-top: 20px;
 }
 
-
-
-
-
-
 .container {
     /* padding-top: 20px; */
 }
-
-
-
 
 input.form-control {
     /* margin-top: 10px; */
@@ -219,4 +204,8 @@ input.form-control {
 
 h3 {
     padding-bottom: 10px;
+}
+
+.paragraph {
+    margin-left: 2em;
 }
