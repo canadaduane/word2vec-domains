@@ -170,3 +170,19 @@ p.copyright {
 }
 
 .input-group-btn {width:500px;}
+
+.results-wrapper {
+    margin-top: 1em;
+}
+
+.results-item {
+    height: 100%;
+    font-size: 18pt;
+    color: #ca8922;
+    margin-left: 2em;
+}
+
+.results-item .available {
+    font-weight: normal;
+    color: #daa942;
+}
