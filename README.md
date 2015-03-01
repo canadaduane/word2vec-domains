@@ -32,11 +32,11 @@ response = Unirest.get "https://#{api_domain}/lookup/#{@dictid}/#{words}",
 This uses Mashape's [unirest](https://github.com/Mashape/unirest-ruby) ruby library to make a GET request to https://canadaduane-word2vec-v1.p.mashape.com. The `dictid` is a required parameter and can (at writing) be one of the following values: `common-300-100k`, `wiki-300`, `wiki-50`, or `gut19th-300-300k`.
 
 | ID (dictid) | Dimensions | Vocabulary Size | Description |
-------------------------------------------------------------
-|common-300-100k|300|100,000|Common Crawl Data (the Internet)|
-|wiki-300|300|300,000|Wikipedia Data|
-|wiki-50|50|300,000|Wikipedia Data (50 dimensions)|
-|gut19th-300-300k|300|300,000|Gutenberg 19th Century Works|
+| ----------- | ---------- | --------------- | ----------- |
+| common-300-100k  | 300 | 100,000 | Common Crawl Data (the Internet) |
+| wiki-300         | 300 | 300,000 | Wikipedia Data                   |
+| wiki-50          | 50  | 300,000 | Wikipedia Data (50 dimensions)   |
+| gut19th-300-300k | 300 | 300,000 | Gutenberg 19th Century Works     |
 
 The `words` required parameter can be one or more words, separated by spaces, that will be combined into a single vector for lookup. When multiple words are combined, there are often some interesting "locations" to be found within the high-dimensional space that correspond to the additive vectors of each word's meaning. For instance "nails" can have multiple meanings--hand nails, or metal nails. Adding a second word will shift you closer to the meaning behind one or the other.
 
