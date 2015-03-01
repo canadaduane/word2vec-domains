@@ -129,6 +129,8 @@ rel = RelatedWords.new("common-300-100k")
 
 # rel.generate_domain_ideas(ARGV)
 
+set :public_folder, 'public'
+
 get "/" do
   json(
     :description => "Domain Name Idea Generator using Mashape word2vec API",
