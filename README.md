@@ -44,3 +44,6 @@ Pagination parameters are optional and should be passed after a `?`, e.g. `?page
 
 We recommend putting the `MASHAPE_KEY` in a .rbenv-vars file in the same directory as this web micro-service after installing [rbenv-vars](https://github.com/sstephenson/rbenv-vars). Alternatively, start the app with `MASHAPE_KEY=[your api key] bundle exec ruby domains.rb`.
 
+## Getting a Mashape Account
+
+Visit http://mashape.com to sign up and get a mashape key. The API gives you several free calls per day, and there are monthly paid subscriptions for more frequent API usage.
