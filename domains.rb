@@ -39,7 +39,7 @@ end
 
 class RelatedWords
 
-  def initialize(dictid = "common-300-100k")
+  def initialize(dictid = "common")
     @dictid = dictid
   end
 
@@ -118,7 +118,7 @@ end
 
 # rel = RelatedWords.new("wiki-300")
 # rel = RelatedWords.new("gut19th-300-300k")
-rel = RelatedWords.new("common-300-100k")
+rel = RelatedWords.new("common")
 
 # rel.generate_domain_ideas(ARGV)
 
