@@ -1,5 +1,7 @@
 # word2vec Domains
 
+Note: this API no longer exists, but the code will remain here for future reference.
+
 ## Generate Domain Name Ideas
 
 This is a sample use of the [word2vec Mashape API](http://mashape.com/canadaduane/word2vec). Given the URL of an existing business, Domains will generate competitive alternative ideas for a business and domain name.
